@@ -37,7 +37,7 @@ function Circle(x, y, radius, color) {
     _setPen(1, color);
     context.beginPath();
     context.arc(x, y, radius, 0, 2 * Math.PI, false);
-    
+    context.closePath();
     context.stroke();
 }
 
